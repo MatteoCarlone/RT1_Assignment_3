@@ -1,4 +1,4 @@
-# ROS Robotics Simulator  <img src="https://media3.giphy.com/media/j5bNquEGoYjPYe7ss1/giphy.gif?cid=ecf05e47ct2lji1wa1xaye059a6m3nljj84tuf4ctzssmdza&rid=giphy.gif&ct=s" width="50"></h2>
+# ROS Robotics Simulator  <img src="https://user-images.githubusercontent.com/81308076/153732812-0077dd5d-ddc0-41bf-9091-e01ce87e0395.gif" width="50"></h2>
 ## First Assignment of the course [Research_Track_1](https://unige.it/en/off.f/2021/ins/51201.html?codcla=10635) , [Robotics Engineering](https://courses.unige.it/10635). 
 ###  Professor. [Carmine Recchiuto](https://github.com/CarmineD8).
 
@@ -22,7 +22,7 @@ __The user can control the robot movement using its keayboard,__
 
 __but an algorithm of obstacle avoidance will prevent the robot to smash into walls__
 
-Installing and Running 
+Installing and Running <img src="https://media3.giphy.com/media/LwBuVHh34nnCPWRSzB/giphy.gif?cid=ecf05e47t4j9mb7l8j1vzdc76i2453rexlnv7iye9d4wfdep&rid=giphy.gif&ct=s" width="50"></h2>
 --------
 
 The implementation of this simulator is based on ROS (Robot-Operating-System), specifically the NOETIC version.
@@ -33,9 +33,7 @@ In addition, the project makes use of some packages and tools that need to be in
 	To Install:
 
 	```bash
-
 		$ git clone https://github.com/CarmineD8/slam_gmapping.git
-
 	```
 
 * ros navigation stack
@@ -43,9 +41,7 @@ In addition, the project makes use of some packages and tools that need to be in
 	To Install:
 
 	```bash
-
 		$ sudo apt-get install ros-<your_ros_distro>-navigation
-
 	```
 
 * xterm
@@ -53,9 +49,7 @@ In addition, the project makes use of some packages and tools that need to be in
 	To Install:
 
 	```bash
-
 		$ sudo apt install xterm
-
 	```
 
 Once the user has all the needed packages, the simulation starts by running a .launch file called
@@ -83,13 +77,20 @@ ROS create the environment described in the file `house.world`, stored into the 
 
 The world view given by the Gazebo simulation turns out to be:
 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/81308076/153732867-40bc8e2d-efe4-4fab-abf6-aa9ec7ad6e6d.png" width="500"></h2>
+</p>
+
 Not knowing all the boundaries of the map, the robot initially knows only the portion of the environment that its sensors allow it to perceive from its starting position.
 
 As the robot moves its knowledge of the map increases. On Rviz the environment known to the robot is graphed and updated at each time instant.
 
-Once the robot has seen all the house_map the view on Rviz turns out to be:
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/81308076/153733095-af7693a4-8377-4d1c-be6a-5f155f65b9dc.png" width="300"></h2>
+</p>
 
-User-Interface
+
+User-Interface <img src="https://media0.giphy.com/media/jQzFUZrBsZ6wse4RH1/giphy.gif?cid=ecf05e47cmge9t3j75v23at26fs7uii5ru9lpmsvpm506o0q&rid=giphy.gif&ct=s" width="50"></h2>
 --------------
 
 This is the main node and the first one spawned.
@@ -108,6 +109,10 @@ The possible commands are the following:
 * __[4]__ - STOP the simulation
 
 When the first modality is called the user will be able to set the desired goal position and to cancel it during the reaching by pressing __[0]__ .
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/81308076/153733044-ab619de0-f9df-4ac3-bd2e-8ede6aafa9fc.png" width="400"></h2>
+</p>
 
 Mode_1 - Autonomous Drive
 -------------------------
