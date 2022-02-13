@@ -4,7 +4,7 @@
 
 -----------------------
 
-This is a ROS Robotics Simulator which use Gazebo and Rviz.
+>This is a ROS Robotics Simulator which use Gazebo and Rviz.
 The aim of this project was to implement three modality of movement that the user can select in order to let the robot exploring an unknown but limited map.
 The user can select the desired behaviour of the robot on a user-interface terminal window, the possible modalities are:
 
@@ -41,7 +41,7 @@ In addition, the project makes use of some packages and tools that need to be in
 	To Install:
 
 	```bash
-		$ sudo apt-get install ros-<your_ros_distro>-navigation
+		$ sudo apt-get install ros-<ros_distro>-navigation
 	```
 
 * xterm
@@ -49,7 +49,7 @@ In addition, the project makes use of some packages and tools that need to be in
 	To Install:
 
 	```bash
-		$ sudo apt install xterm
+		$ sudo apt-get install -y xterm
 	```
 
 Once the user has all the needed packages, the simulation starts by running a .launch file called
