@@ -8,19 +8,9 @@
 The aim of this project was to implement three modality of movement that the user can select in order to let the robot exploring an unknown but limited map.
 The user can select the desired behaviour of the robot on a user-interface terminal window, the possible modalities are:
 
-__1. Autonomous Drive:__
-		
-__The user can set a goal position and the robot will autonomously reach it__
-
-__2. Free Drive:__
-
-__The user can control the robot in the enviroment using its keyboard__
-
-__3. Driver Assistant:__
-		
-__The user can control the robot movement using its keayboard,__
-
-__but an algorithm of obstacle avoidance will prevent the robot to smash into walls__
+*  __1. Autonomous Drive:__   The user can set a goal position and the robot will autonomously reach it__
+* __2. Free Drive:__ The user can control the robot in the enviroment using its keyboard
+* __3. Driver Assistant:__ The user can control the robot movement using its keayboard, but an algorithm of obstacle avoidance will prevent the robot to smash into walls
 
 Installing and Running <img src="https://media3.giphy.com/media/LwBuVHh34nnCPWRSzB/giphy.gif?cid=ecf05e47t4j9mb7l8j1vzdc76i2453rexlnv7iye9d4wfdep&rid=giphy.gif&ct=s" width="50"></h2>
 --------
@@ -182,10 +172,23 @@ The change of velocity is still implemented in this modality and uses the same s
 
 If the user decide to change modality from the UI, The Driver Assistant Node turns to an Idle state.
 
+FlowChart
+---------------------
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/81308076/153845259-9cd7b74b-4828-4850-b27a-474e9550a6a0.png" width="700"></h2>
+</p>
+
+RQT_Graph
+---------------------
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/81308076/153845998-69f9fed2-d13e-47e0-aba7-bd341a13d283.jpg" width="700"></h2>
+</p>
+
 Possible Improvements
 ---------------------
 
-I would like in the future, to implement motion algorithm based on the total knowledge of the map that the robot acquires with these modes.
+>I would like in the future, to implement motion algorithm based on the total knowledge of the map that the robot acquires with these modes.
 I think it is possible to implement the A* (A-star) path planning algorithm, based on finding the fastest Belmand-Ford path to a point , considering the walls of the room as obstacles.
 This set of implementations would make the movement of the robot in the space more efficient and could be an opportunity to confront myself with such types of algorithms.
 
